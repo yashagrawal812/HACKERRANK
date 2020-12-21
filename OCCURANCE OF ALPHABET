@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char str[100];
+    int temp;
+    int temparr[256]={0};
+    int i;
+    fgets(str, 100, stdin);
+ for(i=0;i<strlen(str);i++)
+ {
+     temp=str[i];
+    temparr[temp]++; 
+ }   
+   for(i=0;i<256;i++)
+   {
+       if(temparr[i] > 0)
+       printf("%c%d",i,temparr[i]);
+   }     
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+
+}
