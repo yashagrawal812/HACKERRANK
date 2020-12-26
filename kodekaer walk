@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+ {
+ 	int i,avk=100,avk1=0,juv=120,juv1=0,dex=80,dex1=0,n;
+ 	scanf("%d",&n);
+ 	for(i=0;i<=n-1;i++)
+ 	{
+ 		avk1=avk1+avk+(10*i);
+        juv1=juv1+juv+(5*i);
+        dex1=dex1+dex+(20*i);
+	}
+    printf("%d\n%d\n%d",avk1,juv1,dex1);
+ 		
+	 
+	 return 0;
+ }
